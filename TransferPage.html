@@ -1,0 +1,107 @@
+<!--I declare that this code was written by me. 
+I will not copy or allow others to copy my code. 
+I understand that copying code is considered as plagiarism.
+
+Student Name: Sharukh Muhammad
+Student ID: 22010784
+Class: C369-5D-E63C-A 
+Date/Time Last modified: 03/08/2023, 7:08 P.M.
+-->
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Transfer Form</title>
+    <script src = "script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            background-image: url("Pasir\ Ris\ Town\ Park.jpg");
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Money Transfer Form</h2>
+        <form action="ProcessTransfer.html" method="post">
+            <div class="form-group">
+                <label for="recipient_account">Recipient's Account Number:</label>
+                <input type="text" id="account" name="recipient_account" required>
+            </div>
+            <div class="form-group">
+                <label for="bank_name">Recipient's Bank Name:</label>
+                <input type="text" id="bank" name="bank_name" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+            </div>
+            <div class="form-group">
+                <label for="sender_account">Sender's Account Number:</label>
+                <input type="text" id="sender_account" name="sender_account" required>
+            </div>
+            <div class="form-group">
+                <label for="sender_name">Sender's Name:</label>
+                <input type="text" id="sender_name" name="sender_name" required>
+            </div>
+            <div class="form-group">
+                <label for="purpose">Purpose/Reference:</label>
+                <input type="text" id="purpose" name="purpose">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Transfer Money</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

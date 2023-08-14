@@ -1,0 +1,87 @@
+<!--I declare that this code was written by me. 
+I will not copy or allow others to copy my code. 
+I understand that copying code is considered as plagiarism.
+
+Student Name: Sharukh Muhammad
+Student ID: 22010784
+Class: C369-5D-E63C-A 
+Date/Time Last modified: 03/08/2023, 7:08 P.M.
+-->
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Transfers & Payments</title>
+    </head>
+    <style>
+        body {
+            background-image: url("Sunse-Nice-Pictures.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .login-container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container h1 {
+            text-align: center;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-form label,
+        .login-form input {
+            margin: 10px 0;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-form input[type="submit"] {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-form input[type="submit"]:hover {
+            background-color: #45a049;
+            
+        }
+    </style>
+    <body>
+        <div class="login-container">
+            <h1>Transfers & Payments</h1>
+            <form class="login-form" action="TransferPage.html" method="post">
+                <label for="type">Transfer Type:</label>
+                <select id ="type" name="type" required>
+                    <option value ="" disabled selected>Select transfer type</option>
+                    <option value ="Local"> Local</option>
+                    <option value = "Overseas">Overseas</option>
+                    <option value = "PayNow">PayNow</option>
+                </select>
+    
+    
+                <input type="submit" value="Proceed">
+            </form>
+        </div>
+    </body>
+</html>
